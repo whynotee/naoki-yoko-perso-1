@@ -1,11 +1,11 @@
 # naoki-yoko-perso
 Hey, version qui marche du naoki
 
-##Instalation
+# Instalation
 
 -faite `npm i` dans le cmd ou le terminal
 -faite `node index.js` **dans le terminal pour start le bot**
 
-##Contact Me
+# Contact Me
 
 Discord : !salah#2200
