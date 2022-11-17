@@ -469,11 +469,6 @@ Permission Gestion Permissions
                             emoji: "984991571483197530",
                         },
                         {
-                            label: 'Musique',
-                            value: 'music',
-                            emoji: "999821856347537498",
-                        },
-                        {
                             label: 'Modération',
                             value: 'moderation',
                             emoji: "957098052693422111",
@@ -1005,31 +1000,6 @@ Permet de choisir la punition si un membre non owner/wl tente de faire une actio
                 .setColor(color)
 
 
-            const music = new Discord.MessageEmbed()
-                .setDescription(`
-                          
-\`\`\`fix
-Musique
-\`\`\`
-**\`${pf}play <nom/url musique>\`**
-Permet d'écouter de la musique sur un serveur
-
-**\`${pf}pause\`**
-Permet de mettre en pause la musique actuelle
-
-**\`${pf}resume\`**
-Permet de remettre en lecture la musique mise en pause
-
-**\`${pf}stop\`**
-Permet d'arreter la musique
-
-**\`${pf}volume <0/150>\`**
-Permet de régler le volume de la musique
-
-                          `)
-                .setFooter({ text: `${footer} | Prefix actuel : ${pf}` })
-                .setColor(color)
-
             const proprio = new Discord.MessageEmbed()
                 .setDescription(`
                           
@@ -1095,9 +1065,6 @@ Change le nom du bot
                     }
                     if (value === "utilitaire") {
                         msg.edit({ embeds: [Utilitaire], components: [row] });
-                    }
-                    if (value === "music") {
-                        msg.edit({ embeds: [music], components: [row] });
                     }
                     if (value === "logs") {
                         msg.edit({ embeds: [logs], components: [row] });
@@ -1615,30 +1582,6 @@ Permet de choisir la punition si un membre non owner/wl tente de faire une actio
                 .setColor(color)
 
 
-            const music = new Discord.MessageEmbed()
-                .setDescription(`
-                          
-\`\`\`fix
-Musique
-\`\`\`
-**\`${pf}play <nom/url musique>\`**
-Permet d'écouter de la musique sur un serveur
-
-**\`${pf}pause\`**
-Permet de mettre en pause la musique actuelle
-
-**\`${pf}resume\`**
-Permet de remettre en lecture la musique mise en pause
-
-**\`${pf}stop\`**
-Permet d'arreter la musique
-
-**\`${pf}volume <0/150>\`**
-Permet de régler le volume de la musique
-
-                          `)
-                .setFooter({ text: `${footer} | Prefix actuel : ${pf}` })
-                .setColor(color)
 
             const proprio = new Discord.MessageEmbed()
                 .setDescription(`
@@ -1695,7 +1638,6 @@ Change le nom du bot
                 giveaway,
                 jeux,
                 antiraid,
-                music,
                 proprio
 
             ];
