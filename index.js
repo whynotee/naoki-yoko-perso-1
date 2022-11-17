@@ -107,13 +107,6 @@ for (const file of buyerFiles) {
     client.commands.set(command.name, command);
 }
 
-//|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬| commande  music Handler |▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
-
-const musicFiles = readdirSync('./music').filter(file => file.endsWith('.js'));
-for (const file of musicFiles) {
-    const command = require(`./music/${file}`);
-    client.commands.set(command.name, command);
-}
 
 //|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬| commande  voice Handler |▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 
